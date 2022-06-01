@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+/.idea/
+src/main/java/com/aa/.DS_Store
+.DS_Store
