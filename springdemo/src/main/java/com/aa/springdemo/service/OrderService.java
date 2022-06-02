@@ -1,4 +1,4 @@
-package com.aa.springdemo;
+package com.aa.springdemo.service;
 
 import com.aa.springdemo.entity.Order;
 import com.aa.springdemo.repository.OrderRepository;
@@ -15,5 +15,9 @@ public class OrderService {
 
     List<Order> getAllOrders(){
        return orderRepository.findAll();
+    }
+
+    public void createOrder(Order order){
+        orderRepository.save(order);
     }
 }
